@@ -1,0 +1,30 @@
+$primary: #AC3964;
+$secondary: #F4B221;
+$success: #3A7D44;
+$tertiary: #6E7191;
+$quaternary: #4E4B66;
+
+
+$text-primary: #14142B;
+$text-secondary: white;
+
+
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1440px
+) ;
+
+$btn-border-radius:  50px;
+$btn-padding-y: 16px;
+$btn-padding-x: 36px;
+$btn-font-weight: 700;

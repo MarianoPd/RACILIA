@@ -1,0 +1,102 @@
+.container{
+    @media only screen and(min-width: 1140px){
+        padding-left: 72px !important;
+        padding-right: 72px !important;
+    }
+ 
+}
+.mp-container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    &--center{
+        @include flex(center, center);
+    }
+
+}
+
+
+
+.btn{
+    font-size: 16px;
+    text-transform: uppercase;
+    
+}
+
+.text-primary{
+    color: $primary !important;
+}
+
+.text-secondary{
+    color: $secondary !important;
+}
+
+.text-tertiary{
+    color: $tertiary;
+}
+
+.text-quaternary{
+    color: $quaternary;
+}
+
+.text-success{
+    color: $success !important;
+}
+
+.text-light{
+    color: $text-secondary !important;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: $text-primary;
+    letter-spacing: 0.75px;
+    background: #FBFAF4;
+}
+
+a{
+    text-decoration: none;
+    color: $text-primary;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 32px;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+::-webkit-scrollbar {
+    height: 3px;
+    margin: 0 12px 0 12px;
+}
+
+::-webkit-scrollbar-track {
+    border: 1px solid white;   
+    background: #D9DBE9;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: $primary;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    
+}
