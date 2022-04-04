@@ -164,30 +164,31 @@ main{
             #FBFAF4;        
             ;
         background-repeat: no-repeat;
-        padding: 55px 0 60px 0;
+        padding: 55px 0 40px 0;
         position: relative;
         
 
         &__sidetag{
-            position: absolute;
+            position: fixed;
             right: 0;
-            top: 50%;
+            top: 60%;
+            z-index: 4;
             transform: translate(0, -50%);
             height: 117px;
             width: 37px;
             cursor: pointer;
             background: $primary;
-            color: white;
+            
             box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 10px 0px 0px 10px;
             font-weight: 600;
             font-size: 14px;
 
-            p{
+            a{
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                
+                color: white;
                 transform-origin: left top;
                 transform: rotate(-90deg) translate(-40%, -40%);
                 
@@ -350,7 +351,7 @@ footer{
         }
 
         &__end{
-            height: 4rem;
+            padding: 20px 0; 
             @include flex(between, center);
             flex-wrap: nowrap;
             color: $text-secondary;
@@ -364,6 +365,15 @@ footer{
                 
                 &:last-of-type{
                     text-align: end;
+                }
+
+                img{
+                    border-radius: 2px;
+                    margin-left: 1.5rem;
+
+                    &:first-of-type{
+                        margin: 0;
+                    }
                 }
             }
             @media only screen and (max-width: 720px){
