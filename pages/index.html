@@ -22,49 +22,85 @@
                 <div class="top-header">
                     Free shipping on order over €65! 
                 </div>
-                <div class="container">
+                
                     
-                    <div class="bottom-header">                    
-                        <img src="../images/logos/primary-logo.svg" alt="logo" class="bottom-header__logo" >
-                        <img src="../images/logos/primary-logo-mini.svg" alt="logo mini" class="bottom-header__logo--mini">
-                        
-                        <div class="bottom-header__links">
-                            <a href="#">Products</a>
-                            <a href="#">about us</a>
-                            <a href="#">cooklab</a>
-                            <a href="#">recipes</a>
-                            <a href="#">blog</a>
-                            <a href="#">contact us</a>
-                            <div class="bottom-header__opener">
-                                <div></div>
-                                <div></div>
-                            </div>
+                <div class="bottom-header">                    
+                    <img src="../images/logos/primary-logo.svg" alt="logo" class="bottom-header__logo" >
+                    <img src="../images/logos/primary-logo-mini.svg" alt="logo mini" class="bottom-header__logo--mini">
+                    
+                    <div class="bottom-header__links">
+                        <a href="#">Products</a>
+                        <a href="#">about us</a>
+                        <a href="#">cooklab</a>
+                        <a href="#">recipes</a>
+                        <a href="#">blog</a>
+                        <a href="#">contact us</a>
+                        <div class="bottom-header__opener" id="headerDropdownButton">
+                            <div></div>
+                            <div></div>
                         </div>
-                        <div class="bottom-header__tools">
-                            <button class="btn btn-primary">
+                    </div>
+                    <div class="bottom-header__tools">
+                        <button class="btn btn-primary">
+                            shop
+                        </button>
+                        <a href="#" class="bottom-header__language">en</a>
+                        <a href="#" class="bottom-header__icon">
+                            <span class="material-icons">
+                                search
+                                </span>
+                        </a>
+                        <a href="#" class="bottom-header__icon">
+                        
+                            <span class="material-icons">
+                                person_outline
+                                </span>
+                            
+                        </a>
+                        <a href="#" class="bottom-header__icon">
+                            <span class="material-icons-outlined">
+                                local_mall
+                                </span>
+                        </a>
+                    </div>
+
+                    <div class="header-dropdown" id="header-dropdown" >
+                        <div class="container">
+
+                            <form class="header-dropdown__search">
+                                <input type="text" placeholder="Search">
+                                <button>
+                                    <span class="material-icons">
+                                        search
+                                        </span>
+                                </button>
+                            </form>
+
+                            <div class="header-dropdown__links">
+                                <a href="#">Products</a>
+                                <a href="#">about us</a>
+                                <a href="#">cooklab</a>
+                                <a href="#">recipes</a>
+                                <a href="#">blog</a>
+                                <a href="#">contact us</a>
+                                
+                            </div>
+
+                            <button class="btn btn-primary header-dropdown__shop">
                                 shop
                             </button>
-                            <a href="#" class="bottom-header__language">en</a>
-                            <a href="#" class="bottom-header__icon">
-                                <span class="material-icons">
-                                    search
-                                    </span>
-                            </a>
-                            <a href="#" class="bottom-header__icon">
-                            
-                                <span class="material-icons">
-                                    person_outline
-                                    </span>
-                                
-                            </a>
-                            <a href="#" class="bottom-header__icon">
-                                <span class="material-icons-outlined">
-                                    local_mall
-                                    </span>
-                            </a>
+                            <p class="mb-4">
+                                <a href="#" class="header-dropdown__icon">
+                                    <i class="fa-regular fa-user"></i>                                   
+                                </a>
+                                <a href="#">Accedi - registrati</a>
+                            </p>
+
+                            <a href="#" class="">en</a>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </header>
        
@@ -187,6 +223,9 @@
                                         <span class="product__old-price">€ 6.90</span>
                                     </p>
                                 </div>
+                                <div class="product__discount">
+                                    -14%
+                                </div>
                             </div>
                             
                             
@@ -203,6 +242,9 @@
                                         <span class="product__old-price">€ 6.90</span>
                                     </p>
                                 </div>
+                                <div class="product__discount">
+                                    -14%
+                                </div>
                             </div>
                             <div class="product">
                                 <div class="product__image">
@@ -216,6 +258,9 @@
                                         <span class="product__new-price">from € 5.90</span>
                                         <span class="product__old-price">€ 6.90</span>
                                     </p>
+                                    <div class="product__discount">
+                                        -14%
+                                    </div>
                                 </div>
                             </div>
 
@@ -608,4 +653,5 @@
         </footer>
     
 </body>
+<script src="../scripts/scriptHeader.js"></script>
 </html>

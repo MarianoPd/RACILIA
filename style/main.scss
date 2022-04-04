@@ -8,7 +8,7 @@
 @import "mixins";
 @import "variables";
 
-@import "utilities";
+
 
 
 @import "../node_modules/bootstrap/scss/utilities";
@@ -16,11 +16,12 @@
 @import "../node_modules/bootstrap/scss/buttons";
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/dropdown";
 
 
 
 @import "rewrites";
-
+@import "utilities";
 
 
 
@@ -38,7 +39,7 @@
 }
 
 header{
-
+    position: relative;
     .top-header{
         background: $success;
         color: $text-secondary;
@@ -51,19 +52,23 @@ header{
 
     .bottom-header{
         @include flex(between, center);
-        padding: 16px 0;
-    
+        padding: 16px 4.5rem;
+        position: relative;
+
         &__logo{
             height: 100%;
             max-height: 72px;
             order: 1;
-            @media only screen and(max-width: 1400px){
+            @media only screen and(max-width:1399px){
+                max-width: 115px;
+            }
+            @media only screen and(max-width: 1200px){
                 display: none;
             }                
             
             &--mini{
                 display: none;
-                @media only screen and(max-width: 1400px){
+                @media only screen and(max-width: 1200px){
                     display: block;
                     order: 2;
                 }                
@@ -82,6 +87,12 @@ header{
                 font-size: 16px;
                 line-height: 24px;
                 text-transform: uppercase;
+
+                @media only screen and(max-width:1399px){
+                    &:nth-last-child(1), &:nth-last-child(2){
+                        display: none;
+                    }
+                }
                 
             }
             .bottom-header__opener{
@@ -104,7 +115,7 @@ header{
                 }
             }
 
-            @media only screen and (max-width:1400px){
+            @media only screen and (max-width:1200px){
                 order: 1;
                 >*{
                     display: none;
@@ -133,14 +144,14 @@ header{
             }
             .bottom-header__icon{
                 margin-right: 34px;
+                &:last-of-type{ margin: 0;}
             }
 
-            @media only screen and (max-width: 1440px){
+            
+            @media only screen and (max-width:1200px){
                 button {
                     display: none;
                 }
-            }
-            @media only screen and (max-width:992px){
                 >*{
                     display: none;
                 }
@@ -148,6 +159,68 @@ header{
                     display: block;
                 }
             }
+        }
+    }
+
+    .header-dropdown{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        background-color: $text-secondary;
+        z-index: 5;
+        
+
+        &--show{
+            padding-bottom: 3rem;
+            overflow: auto;
+            height: auto;
+        }
+
+        &__search{
+            @include flex(between, center);
+            margin-bottom: 50px;
+            input{
+                width: 100%;
+                padding: 18px 1.5rem;
+                border: 0;
+                font-family: 'Poppins';
+                font-weight: 400;
+                font-size: 16px;
+            }
+
+            button{
+                width: 24px;
+                height: 24px;
+                border: 0;
+                margin-right: 1.5rem;
+            }
+        }
+
+        a{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            text-transform: uppercase;
+        }
+
+        &__links{
+            
+            >*{
+                display: block;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        &__shop{
+            width: 100%;
+            margin-bottom: 1.5rem;
+        }
+
+        &__icon{
+            font-size: 24px !important;
         }
     }
 }
@@ -490,6 +563,7 @@ footer{
 .product{
     width: 19rem;
     margin-right: 1.5rem;
+    position: relative;
     
     >*{
         text-align: center;
@@ -528,7 +602,7 @@ footer{
     }
 
     &__price{
-        @include flex(between, center);
+        @include flex(center, center);
         flex-wrap: nowrap;
         text-align: center;
         font-weight: 600;
@@ -538,11 +612,35 @@ footer{
             font-weight: 400;
             font-size: 14px;
             text-decoration: line-through;
+            margin-left: 1rem;
         }
 
         .product__new-price{
             color: #00BA88;
         }
+    }
+
+    &__discount{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        padding: 0.5rem 1rem ;
+        background-color: #00BA88;
+        color: white;
+        font-weight: 600;
+        font-size: 14px;
+        border-radius: 30px;
+    }
+    
+    button{
+        padding: 1rem 1.5rem;
+        width: 100%;
+        margin-top: 1.5rem;
+        visibility: hidden;
+    }
+
+    &:hover button{
+        visibility: visible;
     }
 }
 
@@ -875,5 +973,62 @@ footer{
 
     @media only screen and (max-width:575px){
         padding: 0;
+    }
+}
+
+.shop{
+    padding: 7rem 0 4rem 0;
+
+    &__selectors{
+        @include flex(center);
+        padding-bottom: 8.5rem;
+    }
+
+    &__row{
+        @include flex('');
+        flex-wrap: wrap;
+
+        >*{
+            @include flex(center);
+        }
+    }
+    
+}
+
+.paginator{ 
+    width: 100%;
+    @include flex(center);
+    ul{
+        @include flex;
+    }
+    li{
+        border-radius: 4px;
+        height: 2rem;
+        width: 2rem;
+        overflow: hidden;
+        margin-right: 1.5rem;
+        @include flex(center,center);
+        font-weight: 700;
+        font-size: 14px;
+        font-family:sans-serif;
+        
+        &:hover{
+            border: 1px solid $primary;
+            color: $primary;
+        }
+    }
+
+    &__prev{
+        color: $text-secondary;
+        color: #C4CDD5;
+        border: none;
+        width: 100%;
+        height: 100%;
+
+
+        &--deactivated{
+            background: #919EAB;
+            color: $text-secondary;
+        }
     }
 }

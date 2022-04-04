@@ -12,12 +12,20 @@
 }
 
 
+.mp-mt-5{
+    margin-top: 5rem;
+}
+
 .mp-mb-2{
     margin-bottom: 2rem;
 }
 
 .mp-mb-3{
     margin-bottom: 3rem;
+}
+
+.mp-mb-4{
+    margin-bottom: 4rem;
 }
 
 .mp-mb-4-5{
@@ -54,4 +62,20 @@
 
 .mp-fs-14{
     font-size: 14px;
+}
+
+.btn-dropdown{
+    width: 300px;
+    font-weight: 400;
+    font-size: 16px;
+    color: $tertiary;
+    border-radius: 15px;
+    text-transform: none;
+    @include flex(between);
+
+    &:focus{
+        border: 2px solid $text-primary;
+        box-shadow: none;
+        color: $text-primary;
+    }
 }

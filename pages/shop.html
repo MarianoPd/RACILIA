@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>RACILIA</title>
+</head>
+<body>
+    <header>
+        <div class="mp-container">
+            <div class="top-header">
+                Free shipping on order over €65! 
+            </div>
+            
+                
+            <div class="bottom-header">                    
+                <img src="../images/logos/primary-logo.svg" alt="logo" class="bottom-header__logo" >
+                <img src="../images/logos/primary-logo-mini.svg" alt="logo mini" class="bottom-header__logo--mini">
+                
+                <div class="bottom-header__links">
+                    <a href="#">Products</a>
+                    <a href="#">about us</a>
+                    <a href="#">cooklab</a>
+                    <a href="#">recipes</a>
+                    <a href="#">blog</a>
+                    <a href="#">contact us</a>
+                    <div class="bottom-header__opener" id="headerDropdownButton">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="bottom-header__tools">
+                    <button class="btn btn-primary">
+                        shop
+                    </button>
+                    <a href="#" class="bottom-header__language">en</a>
+                    <a href="#" class="bottom-header__icon">
+                        <span class="material-icons">
+                            search
+                            </span>
+                    </a>
+                    <a href="#" class="bottom-header__icon">
+                    
+                        <span class="material-icons">
+                            person_outline
+                            </span>
+                        
+                    </a>
+                    <a href="#" class="bottom-header__icon">
+                        <span class="material-icons-outlined">
+                            local_mall
+                            </span>
+                    </a>
+                </div>
+
+                <div class="header-dropdown" id="header-dropdown" >
+                    <div class="container">
+
+                        <form class="header-dropdown__search">
+                            <input type="text" placeholder="Search">
+                            <button>
+                                <span class="material-icons">
+                                    search
+                                    </span>
+                            </button>
+                        </form>
+
+                        <div class="header-dropdown__links">
+                            <a href="#">Products</a>
+                            <a href="#">about us</a>
+                            <a href="#">cooklab</a>
+                            <a href="#">recipes</a>
+                            <a href="#">blog</a>
+                            <a href="#">contact us</a>
+                            
+                        </div>
+
+                        <button class="btn btn-primary header-dropdown__shop">
+                            shop
+                        </button>
+                        <p class="mb-4">
+                            <a href="#" class="header-dropdown__icon">
+                                <i class="fa-regular fa-user"></i>                                   
+                            </a>
+                            <a href="#">Accedi - registrati</a>
+                        </p>
+
+                        <a href="#" class="">en</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        <div class="mp-container">
+
+            <section class="shop">
+                <div class="container">
+                    <div class="center-text mp-mb-5">
+                        <p class="sub-title ">Shop</p>
+                        <h2 class="text-success">Consectetur blandit tristique.</h2>
+                    </div>
+
+                    <div class="shop__selectors">
+                        <div class="dropdown">
+                            <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              Categorie
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" id="dropdownMenu1">
+                                <li>
+                                    <input type="checkbox" id="">
+                                    <label for="">select all</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="">
+                                    <label for="">Agrumicolo</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="">
+                                    <label for="">Olio e.v.o.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="">
+                                    <label for="">Condimenti e salse</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="">
+                                    <label for="">Legumi e cereali</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="">
+                                    <label for="">Pasta e farine</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="">
+                                    <label for="">Frutta secca e canditi</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="">
+                                    <label for="">Prodotti dolciari</label>
+                                </li>
+                              
+                            </ul>
+                          </div>
+
+                          <div class="dropdown">
+                            <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                              Sort By
+                            </button>
+                            <ul class="dropdown-menu border-0" aria-labelledby="dropdownMenuButton2" id="dropdownMenu2">
+                                <li>
+                                    Name ( A-Z )
+                                </li>
+                                <li>
+                                    Price =>
+                                </li>
+                                <li>
+                                    Price <=
+                                </li>
+                                
+                              
+                            </ul>
+                          </div>
+                    </div>
+
+                    <div class="shop__row">
+                        <div class="col-12 col-sm-6 col-lg-3  mp-mb-4">
+                            <div class="product m-0">
+                                <div class="product__image">
+                                    <img src="../images/products/pesto.png" alt="pesto">
+                                </div>
+                                <div class="product__wrapper">
+                                    <p class="product__tag">Pesto</p>
+                                    <p class="product__name">Pesto a' Siciliana Artigianale</p>
+                                    <p class="product__info">Single pack, 6-pack</p>
+                                    <p class="product__price">
+                                        <span class="product__new-price">from € 5.90</span>
+                                        <span class="product__old-price">€ 6.90</span>                                        
+                                    </p>
+                                    <button class="btn btn-primary">
+                                        add to cart
+                                    </button>
+                                </div>
+                                <div class="product__discount">
+                                    -14%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mp-mb-4">
+                            <div class="product m-0">
+                                <div class="product__image">
+                                    <img src="../images/products/pesto.png" alt="pesto">
+                                </div>
+                                <div class="product__wrapper">
+                                    <p class="product__tag">Pesto</p>
+                                    <p class="product__name">Pesto a' Siciliana Artigianale</p>
+                                    <p class="product__info">Single pack, 6-pack</p>
+                                    <p class="product__price">
+                                        <span>€ 6.90</span>
+                                        
+                                    </p>
+                                    <button class="btn btn-primary">
+                                        add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mp-mb-4">
+                            <div class="product m-0">
+                                <div class="product__image">
+                                    <img src="../images/products/pesto.png" alt="pesto">
+                                </div>
+                                <div class="product__wrapper">
+                                    <p class="product__tag">Pesto</p>
+                                    <p class="product__name">Pesto a' Siciliana Artigianale</p>
+                                    <p class="product__info">Single pack, 6-pack</p>
+                                    <p class="product__price">
+                                        <span>€ 6.90</span>
+                                        
+                                    </p>
+                                    <button class="btn btn-primary">
+                                        add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mp-mb-4">
+                            <div class="product m-0">
+                                <div class="product__image">
+                                    <img src="../images/products/pesto.png" alt="pesto">
+                                </div>
+                                <div class="product__wrapper">
+                                    <p class="product__tag">Pesto</p>
+                                    <p class="product__name">Pesto a' Siciliana Artigianale</p>
+                                    <p class="product__info">Single pack, 6-pack</p>
+                                    <p class="product__price">
+                                        <span>€ 6.90</span>
+                                        
+                                    </p>
+                                    <button class="btn btn-primary">
+                                        add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-3  mp-mb-4">
+                            <div class="product m-0">
+                                <div class="product__image">
+                                    <img src="../images/products/pesto.png" alt="pesto">
+                                </div>
+                                <div class="product__wrapper">
+                                    <p class="product__tag">Pesto</p>
+                                    <p class="product__name">Pesto a' Siciliana Artigianale</p>
+                                    <p class="product__info">Single pack, 6-pack</p>
+                                    <p class="product__price">
+                                        <span class="product__new-price">from € 5.90</span>
+                                        <span class="product__old-price">€ 6.90</span>                                        
+                                    </p>
+                                    <button class="btn btn-primary">
+                                        add to cart
+                                    </button>
+                                </div>
+                                <div class="product__discount">
+                                    -14%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mp-mb-4">
+                            <div class="product m-0">
+                                <div class="product__image">
+                                    <img src="../images/products/pesto.png" alt="pesto">
+                                </div>
+                                <div class="product__wrapper">
+                                    <p class="product__tag">Pesto</p>
+                                    <p class="product__name">Pesto a' Siciliana Artigianale</p>
+                                    <p class="product__info">Single pack, 6-pack</p>
+                                    <p class="product__price">
+                                        <span>€ 6.90</span>
+                                        
+                                    </p>
+                                    <button class="btn btn-primary">
+                                        add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mp-mb-4">
+                            <div class="product m-0">
+                                <div class="product__image">
+                                    <img src="../images/products/pesto.png" alt="pesto">
+                                </div>
+                                <div class="product__wrapper">
+                                    <p class="product__tag">Pesto</p>
+                                    <p class="product__name">Pesto a' Siciliana Artigianale</p>
+                                    <p class="product__info">Single pack, 6-pack</p>
+                                    <p class="product__price">
+                                        <span>€ 6.90</span>
+                                        
+                                    </p>
+                                    <button class="btn btn-primary">
+                                        add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 mp-mb-4">
+                            <div class="product m-0">
+                                <div class="product__image">
+                                    <img src="../images/products/pesto.png" alt="pesto">
+                                </div>
+                                <div class="product__wrapper">
+                                    <p class="product__tag">Pesto</p>
+                                    <p class="product__name">Pesto a' Siciliana Artigianale</p>
+                                    <p class="product__info">Single pack, 6-pack</p>
+                                    <p class="product__price">
+                                        <span>€ 6.90</span>
+                                        
+                                    </p>
+                                    <button class="btn btn-primary">
+                                        add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <div class="paginator mp-mt-5">
+                    <ul>
+                        <li>
+                            <button class="paginator__prev paginator__prev--deactivated">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                        </li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>...</li>
+                        <li>9</li>
+                        <li>10</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section class="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="services__card">
+                                <div class="services__image">
+                                    <img src="../images/icons/secure.svg" alt="secure">
+                                </div>
+                                <p class="services__title">
+                                    Pagamenti sicuri
+                                </p>
+                                <p class="services__description">
+                                    The best payment methods to make you feel safe and secure.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="services__card">
+                                <div class="services__image">
+                                    <img src="../images/icons/delivery.svg" alt="delivery">
+                                </div>
+                                <p class="services__title">
+                                    SPEDIZIONE GRATUITA
+                                </p>
+                                <p class="services__description">
+                                    Free shipping on order over €65.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="services__card">
+                                <div class="services__image">
+                                    <img src="../images/icons/frost.svg" alt="frost">
+                                </div>
+                                <p class="services__title">
+                                    spedizione sicura
+                                </p>
+                                <p class="services__description">
+                                    Always get fresh products thanks to our shipping methods.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="services__card">
+                                <div class="services__image">
+                                    <img src="../images/icons/client_service.svg" alt="client_service">
+                                </div>
+                                <p class="services__title">
+                                    servizio clienti
+                                </p>
+                                <p class="services__description">
+                                    For questions and information you can always contact us.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="mp-container">
+            <div class="top-footer"></div>
+            <div class="middle-footer">
+                <div class="container">
+                    <div class="col-12 d-flex justify-content-center mp-mb-5">
+                        <img src="../images/logos/plain-logo.svg" alt="logo">
+                    </div>
+                    <div class="row middle-footer__row">
+                        <div class="col-12 col-md-6 col-lg-3 middle-footer__links" >
+                            <p>Support</p>
+                            <a href="#">contact us</a>
+                            <a href="#">account</a>
+                            <a href="#">my order</a>
+                            <a href="#">faq</a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 middle-footer__links">
+                            <p>Support</p>
+                            <a href="#">contact us</a>
+                            <a href="#">account</a>
+                            <a href="#">my order</a>
+                            <a href="#">faq</a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 middle-footer__links">
+                            <p>Support</p>
+                            <a href="#">contact us</a>
+                            <a href="#">account</a>
+                            <a href="#">my order</a>
+                            <a href="#">faq</a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 middle-footer__links">
+                            <p>Follow us</p>
+                            <div class="middle-footer__socials">
+                                <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube-square"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle-footer__end">
+                    <div class="container">
+                        <div class="row">
+                            <p class="col-12 mb-4 col-md-6 mb-md-0 mp-fs-14">
+                                AXN s.r.l VAT 05540880878 | Copyright © 2021, RACILIA | All Rights Reserved
+                            </p>
+                            <p class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end align-items-center">
+                            <img src="../images/icons/visa.svg" alt="visa">
+                            <img src="../images/icons/mastercard.svg" alt="mastercard.svg">
+                            <img src="../images/icons/maestro.svg" alt="maestro">
+                            <img src="../images/icons/american-express.svg" alt=american-exprss">
+                            <img src="../images/icons/paypal-2.svg" alt="paypal-2">               
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>Cooked By</p>
+                <img src="../images/logos/bw-logo.svg" alt="biscuitway">
+            </div>
+        </div>
+        
+    </footer>
+</body>
+
+<script src="../scripts/scriptHeader.js"></script>
+<script src="../scripts/scriptShop.js"></script>
+</html>
